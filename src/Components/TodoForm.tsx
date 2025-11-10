@@ -9,8 +9,6 @@ interface TodoFormProps {
 const TodoForm: React.FC<TodoFormProps> = ({ edit, onSubmit }) => {
   const [input, setInput] = useState(edit ? edit.value : '');
   
-  console.log(edit);
-
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
